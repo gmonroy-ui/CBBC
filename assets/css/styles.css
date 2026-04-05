@@ -54,7 +54,23 @@ a {
   min-height: 80px;
   gap: 24px;
 }
+.hero-principles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0 26px;
+}
 
+.hero-principles span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.12);
+  color: white;
+  backdrop-filter: blur(4px);
+  letter-spacing: 0.3px;
+}
 .brand {
   display: flex;
   align-items: center;
