@@ -58,7 +58,7 @@ a {
 .brand {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 }
 
 .brand-mark {
@@ -96,8 +96,11 @@ a {
 }
 .logo {
   height: 46px;
-  width: auto;
-  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
 }
 .hero {
   position: relative;
