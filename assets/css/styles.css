@@ -493,6 +493,21 @@ img {
 
 /* Footer */
 
+
+.site-footer-red {
+  background: linear-gradient(135deg, #7a0000 0%, #b30000 45%, #5e0000 100%);
+  color: white;
+  border-top: none;
+}
+.site-footer-red h4,
+.site-footer-red p,
+.site-footer-red a {
+  color: white;
+}
+.site-footer-red a:hover {
+  color: rgba(255,255,255,0.82);
+}
+
 .site-footer {
   border-top: 1px solid var(--border);
   background: var(--white);
