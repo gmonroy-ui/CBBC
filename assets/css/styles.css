@@ -667,3 +667,265 @@ img {
     font-size: 0.85rem;
   }
 }
+/* =========================================
+   ACCORDIONS, SCHEDULE TABLES, ROSTERS, FOOTER FIX
+   ADD THIS AT THE VERY END OF styles.css
+========================================= */
+
+/* Accordion layout */
+
+.accordion-stack {
+  display: grid;
+  gap: 18px;
+}
+
+.accordion-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.accordion-card summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 22px 26px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  align-items: center;
+  font-weight: 800;
+  font-size: 1.02rem;
+  background: var(--white);
+  transition: background 0.2s ease;
+}
+
+.accordion-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-card summary::after {
+  content: "+";
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-left: 12px;
+}
+
+.accordion-card[open] summary::after {
+  content: "−";
+}
+
+.accordion-card[open] summary {
+  background: #fafafa;
+  border-bottom: 1px solid var(--border);
+}
+
+.accordion-body {
+  padding: 22px 26px 26px;
+}
+
+.accordion-body p {
+  margin-top: 0;
+  margin-bottom: 14px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.accordion-body a {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.accordion-body a:hover {
+  color: var(--primary-dark);
+}
+
+/* Roster grid */
+
+.roster-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 18px;
+  margin-top: 18px;
+}
+
+.roster-list {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: #fafafa;
+}
+
+.roster-list span:first-child {
+  min-width: 44px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.roster-list span:last-child {
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* Schedule mini table */
+
+.mini-table {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--white);
+}
+
+.mini-row {
+  display: grid;
+  grid-template-columns: 1.1fr 1.7fr 1.3fr 0.8fr;
+  gap: 16px;
+  align-items: center;
+  padding: 16px 18px;
+  border-bottom: 1px solid #eeeeef;
+}
+
+.mini-row:last-child {
+  border-bottom: none;
+}
+
+.mini-head {
+  background: #f3f3f5;
+  font-weight: 800;
+  color: #444;
+}
+
+.mini-row:not(.mini-head):hover {
+  background: #fafafa;
+}
+
+/* Main schedule section improvement */
+
+#schedule .table-card {
+  margin-top: 8px;
+}
+
+#schedule .section-head h2 {
+  margin-top: 4px;
+}
+
+/* Footer fix */
+
+.site-footer.site-footer-red {
+  background: linear-gradient(135deg, #7a0000 0%, #b30000 45%, #5e0000 100%);
+  color: var(--white);
+  border-top: none;
+  padding: 58px 0 28px;
+}
+
+.site-footer.site-footer-red h4,
+.site-footer.site-footer-red p,
+.site-footer.site-footer-red a {
+  color: var(--white);
+}
+
+.site-footer.site-footer-red a:hover {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.footer-grid-4 {
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+.footer-brand {
+  max-width: 360px;
+}
+
+.footer-logo {
+  height: 64px;
+  width: auto;
+  margin-bottom: 14px;
+}
+
+.footer-tagline {
+  font-weight: 700;
+  margin-top: 14px;
+  opacity: 0.95;
+}
+
+.footer-donate-btn {
+  margin-top: 12px;
+}
+
+.footer-bottom {
+  margin-top: 34px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsive */
+
+@media (max-width: 1080px) {
+  .footer-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .roster-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mini-row {
+    grid-template-columns: 1fr 1.3fr 1fr 0.8fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .accordion-card summary {
+    grid-template-columns: 1fr;
+    padding: 18px 18px;
+  }
+
+  .accordion-body {
+    padding: 18px 18px 20px;
+  }
+
+  .mini-row,
+  .mini-head {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .mini-head {
+    display: none;
+  }
+
+  .mini-row {
+    padding: 14px 16px;
+  }
+
+  .mini-row > div {
+    position: relative;
+  }
+
+  .footer-grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
