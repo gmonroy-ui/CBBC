@@ -99,6 +99,15 @@ a {
   color: var(--muted);
 }
 
+.hero-principles span {
+  transition: all 0.2s ease;
+}
+
+.hero-principles span:hover {
+  background: white;
+  color: #b30000;
+  transform: translateY(-2px);
+}
 .main-nav {
   display: flex;
   align-items: center;
