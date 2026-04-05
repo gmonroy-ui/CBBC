@@ -349,6 +349,48 @@ img {
   border-radius: 26px;
 }
 
+.hero-media-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-media-badge {
+  position: absolute;
+  top: 28px;
+  left: 28px;
+  z-index: 2;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--primary-dark);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.hero-media-caption {
+  position: absolute;
+  left: 30px;
+  bottom: 28px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--white);
+}
+
+.hero-media-caption strong {
+  font-size: 1.08rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.hero-media-caption span {
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.88);
+}
 /* Quick links */
 
 .quick-links {
