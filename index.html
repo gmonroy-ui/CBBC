@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+
   <header class="site-header">
     <div class="container nav">
       <div class="brand">
@@ -17,232 +18,452 @@
           <div class="brand-subtitle">Bellaire Baseball</div>
         </div>
       </div>
-  
+
       <nav class="main-nav">
+        <a href="#home">Home</a>
         <a href="#teams">Teams</a>
+        <a href="#rosters">Rosters</a>
         <a href="#schedule">Schedules</a>
         <a href="#venues">Venues</a>
+        <a href="#photos">Photos</a>
         <a href="#info">Info</a>
         <a href="#contact">Contact</a>
-        <a class="btn btn-nav" href="https://www.paypal.com/donate/?hosted_button_id=57MP36ZK4H9AJ&source=qr" target="_blank">Donate</a>
+        <a class="btn btn-nav" href="https://www.paypal.com/donate/?hosted_button_id=57MP36ZK4H9AJ&source=qr" target="_blank" rel="noopener noreferrer">Donate</a>
       </nav>
     </div>
   </header>
 
-<section class="hero">
-  <div class="hero-overlay"></div>
+  <main>
 
-  <div class="container hero-grid">
-    
-    <!-- LEFT CONTENT -->
-    <div class="hero-copy">
-      
-      <span class="eyebrow">Built on Tradition. Driven by Excellence.</span>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
 
-      <h1>
-        Bellaire Baseball.<br>
-        One Team. One Standard.
-      </h1>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Built on Tradition. Driven by Excellence.</span>
 
-      <p>
-        A program built on accountability, toughness, and family. 
-        Representing Bellaire with pride, on and off the field, while developing student-athletes who compete, lead, and grow together.
-      </p>
+          <h1>
+            Bellaire Baseball.<br>
+            One Team. One Standard.
+          </h1>
 
-      <!-- TEAM PRINCIPLES -->
-      <div class="hero-principles">
-        <span>Tradition</span>
-        <span>Excellence</span>
-        <span>Accountability</span>
-        <span>Toughness</span>
-        <span>Family</span>
-      </div>
+          <p>
+            A program built on accountability, toughness, and family.
+            Representing Bellaire with pride, on and off the field, while developing student-athletes who compete, lead, and grow together.
+          </p>
 
-      <!-- ACTIONS -->
-      <div class="hero-actions">
-        <a class="btn btn-light" href="#schedule">View Schedule</a>
-        <a class="btn btn-outline" href="#teams">Explore Teams</a>
-      </div>
-
-    </div>
-
-    <!-- RIGHT IMAGE -->
-    <div class="hero-card">
-      <img src="assets/images/hero.png" class="hero-image" alt="Bellaire Baseball Field">
-    </div>
-
-  </div>
-</section>
-
-  <section class="quick-links">
-    <div class="container quick-links-grid">
-      <a class="quick-link-card" href="#schedule">Schedules</a>
-      <a class="quick-link-card" href="#teams">Rosters</a>
-      <a class="quick-link-card" href="#venues">Venues</a>
-      <a class="quick-link-card" href="https://bellairebaseballcbbc.smugmug.com/Bellaire-Baseball-2026/Bellaire-Cardinal-Happenings-2026" target="_blank">Photos</a>
-      <a class="quick-link-card" href="https://www.paypal.com/donate/?hosted_button_id=57MP36ZK4H9AJ&source=qr" target="_blank">Donate</a>
-      <a class="quick-link-card" href="https://www.rainedout.net/team_page.php?a=71d2ca0dbcc4b8f1a250" target="_blank">Rain Out Alerts</a>
-    </div>
-  </section>
-
-  <section id="teams" class="section">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <div class="section-eyebrow">Teams</div>
-          <h2>2026 Team Overview</h2>
-        </div>
-      </div>
-
-      <div class="cards-grid">
-        <article class="team-card">
-          <div class="pill">Varsity</div>
-          <h3>BHS Varsity</h3>
-          <p><strong>Record:</strong> 14-10</p>
-          <p><strong>Manager:</strong> Nick Ozuna III</p>
-          <p><strong>Next Game:</strong> Tue, Apr 7 vs Heights High School</p>
-          <div class="card-actions">
-            <a class="btn btn-primary" href="#">Roster</a>
-            <a class="btn btn-secondary" href="#">Team Page</a>
+          <div class="hero-principles">
+            <span>Tradition</span>
+            <span>Excellence</span>
+            <span>Accountability</span>
+            <span>Toughness</span>
+            <span>Family</span>
           </div>
-        </article>
 
-        <article class="team-card">
-          <div class="pill">Junior Varsity</div>
-          <h3>Bellaire JV</h3>
-          <p><strong>Record:</strong> 9-9</p>
-          <p><strong>Manager:</strong> Jose Lima Jr.</p>
-          <p><strong>Next Game:</strong> Wed, Apr 8 vs Lamar JV</p>
-          <div class="card-actions">
-            <a class="btn btn-primary" href="#">Roster</a>
-            <a class="btn btn-secondary" href="#">Team Page</a>
+          <div class="hero-actions">
+            <a class="btn btn-light" href="#schedule">View Schedule</a>
+            <a class="btn btn-outline" href="#teams">Explore Teams</a>
           </div>
-        </article>
+        </div>
 
-        <article class="team-card">
-          <div class="pill">Sophomore</div>
-          <h3>Bellaire Sophomore</h3>
-          <p><strong>Record:</strong> 4-13</p>
-          <p><strong>Manager:</strong> Chris Moritz</p>
-          <p><strong>Next Game:</strong> Wed, Apr 8 vs NorthSide Sophomore</p>
-          <div class="card-actions">
-            <a class="btn btn-primary" href="#">Roster</a>
-            <a class="btn btn-secondary" href="#">Team Page</a>
+        <div class="hero-card">
+          <img src="assets/images/hero.png" class="hero-image" alt="Bellaire Baseball Field">
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-links">
+      <div class="container">
+        <div class="quick-links-grid">
+          <a class="quick-link-card" href="#teams">Teams</a>
+          <a class="quick-link-card" href="#rosters">Rosters</a>
+          <a class="quick-link-card" href="#schedule">Schedules</a>
+          <a class="quick-link-card" href="#venues">Venues</a>
+          <a class="quick-link-card" href="#photos">Photos</a>
+          <a class="quick-link-card" href="https://www.paypal.com/donate/?hosted_button_id=57MP36ZK4H9AJ&source=qr" target="_blank" rel="noopener noreferrer">Donate</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="program" class="section section-soft">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">Program Identity</div>
+            <h2>Built on More Than Baseball</h2>
           </div>
-        </article>
-      </div>
-    </div>
-  </section>
+        </div>
 
-  <section id="schedule" class="section section-soft">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <div class="section-eyebrow">Upcoming</div>
-          <h2>Upcoming Games</h2>
+        <div class="cards-grid">
+          <article class="info-card">
+            <h3>Tradition</h3>
+            <p>
+              Bellaire Baseball is built on pride, discipline, and the legacy of those who came before.
+              The program reflects a longstanding standard of commitment, effort, and representation.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Development</h3>
+            <p>
+              We help student-athletes grow in skill, confidence, leadership, and character.
+              The goal is not only to compete, but to prepare players for the next level on and off the field.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Brotherhood</h3>
+            <p>
+              Bellaire Baseball is rooted in accountability, toughness, and family.
+              The strength of the program comes from teammates, coaches, parents, and a shared sense of purpose.
+            </p>
+          </article>
         </div>
       </div>
+    </section>
 
-      <div class="table-card">
-        <div class="schedule-row schedule-head">
-          <div>Date</div>
-          <div>Team</div>
-          <div>Matchup</div>
-          <div>Venue</div>
-          <div>Time</div>
+    <section id="teams" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">Teams</div>
+            <h2>Our Teams</h2>
+          </div>
         </div>
 
-        <div class="schedule-row">
-          <div>Tue, Apr 7</div>
-          <div>Varsity</div>
-          <div>BHS Varsity vs Heights High School</div>
-          <div>Delmar Field</div>
-          <div>4:00 PM</div>
-        </div>
+        <div class="cards-grid">
+          <article class="team-card">
+            <div class="pill">Varsity</div>
+            <h3>BHS Varsity</h3>
+            <p><strong>Record:</strong> 14-10</p>
+            <p><strong>Manager:</strong> Nick Ozuna III</p>
+            <p><strong>Next Game:</strong> Tue, Apr 7 vs Heights High School</p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="#rosters">View Roster</a>
+              <a class="btn btn-secondary" href="#schedule">View Schedule</a>
+            </div>
+          </article>
 
-        <div class="schedule-row">
-          <div>Wed, Apr 8</div>
-          <div>JV</div>
-          <div>Lamar JV vs Bellaire JV</div>
-          <div>RP Manuel Field</div>
-          <div>5:00 PM</div>
-        </div>
+          <article class="team-card">
+            <div class="pill">Junior Varsity</div>
+            <h3>Bellaire JV</h3>
+            <p><strong>Record:</strong> 9-9</p>
+            <p><strong>Manager:</strong> Jose Lima Jr.</p>
+            <p><strong>Next Game:</strong> Wed, Apr 8 vs Lamar JV</p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="#rosters">View Roster</a>
+              <a class="btn btn-secondary" href="#schedule">View Schedule</a>
+            </div>
+          </article>
 
-        <div class="schedule-row">
-          <div>Wed, Apr 8</div>
-          <div>Sophomore</div>
-          <div>Bellaire Sophomore vs NorthSide Sophomore</div>
-          <div>NorthSide High School</div>
-          <div>5:00 PM</div>
+          <article class="team-card">
+            <div class="pill">Sophomore</div>
+            <h3>Bellaire Sophomore</h3>
+            <p><strong>Record:</strong> 4-13</p>
+            <p><strong>Manager:</strong> Chris Moritz</p>
+            <p><strong>Next Game:</strong> Wed, Apr 8 vs NorthSide Sophomore</p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="#rosters">View Roster</a>
+              <a class="btn btn-secondary" href="#schedule">View Schedule</a>
+            </div>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="venues" class="section">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <div class="section-eyebrow">Venues</div>
-          <h2>Field Directions</h2>
+    <section id="rosters" class="section section-soft">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">Rosters</div>
+            <h2>Team Rosters</h2>
+          </div>
+        </div>
+
+        <div class="cards-grid">
+          <article class="info-card">
+            <h3>Varsity Roster</h3>
+            <p>
+              View the current Bellaire Varsity roster, including player listings and team information for the 2026 season.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="#">View Varsity Roster</a>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <h3>Junior Varsity Roster</h3>
+            <p>
+              Access the Bellaire JV roster and player information for the current season.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="#">View JV Roster</a>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <h3>Sophomore Roster</h3>
+            <p>
+              Explore the Bellaire Sophomore roster, player listings, and team details.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="#">View Sophomore Roster</a>
+            </div>
+          </article>
         </div>
       </div>
+    </section>
 
-      <div class="cards-grid two-col">
-        <article class="info-card">
-          <h3>RP Manuel Field @ Cardinal Complex</h3>
-          <p>This is the practice facility of Bellaire Baseball and the home field of the Bellaire JV and Sophomore teams.</p>
-          <p><strong>Address:</strong> 6300 Ave B, Bellaire, TX 77401</p>
-          <a class="btn btn-primary" href="#" target="_blank">Get Directions</a>
-        </article>
+    <section id="schedule" class="section">
+      <div class="container">
+        <div class="section-head" style="display:flex; justify-content:space-between; align-items:end; gap:20px; flex-wrap:wrap;">
+          <div>
+            <div class="section-eyebrow">Upcoming</div>
+            <h2>Upcoming Games</h2>
+          </div>
+          <a href="#" class="btn btn-secondary">View Full Schedule</a>
+        </div>
 
-        <article class="info-card">
-          <h3>St. Thomas Field</h3>
-          <p>Parking is along the third base line. It may be crowded during school hours.</p>
-          <p><strong>Address:</strong> 4500 Memorial Drive, Houston, TX 77007</p>
-          <a class="btn btn-primary" href="#" target="_blank">Get Directions</a>
-        </article>
+        <div class="table-card">
+          <div class="schedule-row schedule-head">
+            <div>Date</div>
+            <div>Team</div>
+            <div>Matchup</div>
+            <div>Venue</div>
+            <div>Time</div>
+          </div>
+
+          <div class="schedule-row">
+            <div>Tue, Apr 7</div>
+            <div>Varsity</div>
+            <div>BHS Varsity vs Heights High School</div>
+            <div>Delmar Field</div>
+            <div>4:00 PM</div>
+          </div>
+
+          <div class="schedule-row">
+            <div>Wed, Apr 8</div>
+            <div>JV</div>
+            <div>Lamar JV vs Bellaire JV</div>
+            <div>RP Manuel Field</div>
+            <div>5:00 PM</div>
+          </div>
+
+          <div class="schedule-row">
+            <div>Wed, Apr 8</div>
+            <div>Sophomore</div>
+            <div>Bellaire Sophomore vs NorthSide Sophomore</div>
+            <div>NorthSide High School</div>
+            <div>5:00 PM</div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="info" class="section section-dark">
-    <div class="container dark-grid">
-      <a class="dark-card" href="https://www.rainedout.net/team_page.php?a=71d2ca0dbcc4b8f1a250" target="_blank">
-        <h3>Rain Out Alerts</h3>
-        <p>Stay updated with weather and schedule changes.</p>
-      </a>
+    <section id="venues" class="section section-soft">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">Venues</div>
+            <h2>Fields & Directions</h2>
+          </div>
+        </div>
 
-      <a class="dark-card" href="https://bellairebaseballcbbc.smugmug.com/Bellaire-Baseball-2026/Bellaire-Cardinal-Happenings-2026" target="_blank">
-        <h3>2026 Photo Album</h3>
-        <p>Browse Bellaire Baseball happenings and highlights.</p>
-      </a>
+        <div class="cards-grid two-col">
+          <article class="info-card">
+            <h3>RP Manuel Field @ Cardinal Complex</h3>
+            <p>
+              This is the practice facility of Bellaire Baseball and the home field of the Bellaire JV and Sophomore teams.
+            </p>
+            <p><strong>Address:</strong> 6300 Ave B, Bellaire, TX 77401</p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">Get Directions</a>
+            </div>
+          </article>
 
-      <a class="dark-card" href="https://www.paypal.com/donate/?hosted_button_id=57MP36ZK4H9AJ&source=qr" target="_blank">
-        <h3>Support the Program</h3>
-        <p>Donate to help Bellaire Baseball continue its tradition.</p>
-      </a>
-    </div>
-  </section>
+          <article class="info-card">
+            <h3>St. Thomas Field</h3>
+            <p>
+              Parking is along the third base line. It may be crowded during school hours.
+            </p>
+            <p><strong>Address:</strong> 4500 Memorial Drive, Houston, TX 77007</p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">Get Directions</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="photos" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">Photos</div>
+            <h2>Photos & Highlights</h2>
+          </div>
+        </div>
+
+        <div class="cards-grid">
+          <article class="info-card">
+            <h3>2026 Season Highlights</h3>
+            <p>
+              Browse season photos, team moments, and program highlights from Bellaire Baseball.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="https://bellairebaseballcbbc.smugmug.com/Bellaire-Baseball-2026/Bellaire-Cardinal-Happenings-2026" target="_blank" rel="noopener noreferrer">View Album</a>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <h3>Team Picture Links</h3>
+            <p>
+              Access photo galleries and team picture links as they become available throughout the season.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="#">View Links</a>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <h3>Program Memories</h3>
+            <p>
+              Celebrate Bellaire Baseball through shared moments, snapshots, and highlights from the program.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="#">Explore More</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="section section-soft">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">Info</div>
+            <h2>Program Information</h2>
+          </div>
+        </div>
+
+        <div class="cards-grid">
+          <article class="info-card">
+            <h3>Coaching Staff</h3>
+            <p>
+              Meet the coaches and staff who lead and support Bellaire Baseball across the program.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="#">View Staff</a>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <h3>Awards & Recognitions</h3>
+            <p>
+              Explore player recognitions, team accomplishments, and program milestones.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="#">View Awards</a>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <h3>Commits</h3>
+            <p>
+              See Bellaire Baseball players who have committed to continue their baseball journey at the next level.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="#">View Commits</a>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <h3>Bellaire in the News</h3>
+            <p>
+              Read updates, stories, and media coverage connected to the program and its players.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="#">Read More</a>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <h3>Yearbook in Review</h3>
+            <p>
+              Look back at season highlights, program milestones, and memories captured year by year.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="#">View Review</a>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <h3>Hall of Fame in Review</h3>
+            <p>
+              Honor past players, contributors, and moments that helped shape Bellaire Baseball tradition.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="#">View HOF</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="connect" class="section" style="background:#efeff1;">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-eyebrow">Stay Connected</div>
+            <h2>Updates, Support & Community</h2>
+          </div>
+        </div>
+
+        <div class="dark-grid">
+          <a class="dark-card" href="https://www.rainedout.net/team_page.php?a=71d2ca0dbcc4b8f1a250" target="_blank" rel="noopener noreferrer">
+            <h3>Rain Out Alerts</h3>
+            <p>Get timely updates on weather delays, cancellations, and schedule changes.</p>
+          </a>
+
+          <a class="dark-card" href="https://bellairebaseballcbbc.smugmug.com/Bellaire-Baseball-2026/Bellaire-Cardinal-Happenings-2026" target="_blank" rel="noopener noreferrer">
+            <h3>2026 Photo Album</h3>
+            <p>Browse season highlights, team moments, and program memories.</p>
+          </a>
+
+          <a class="dark-card" href="https://www.paypal.com/donate/?hosted_button_id=57MP36ZK4H9AJ&source=qr" target="_blank" rel="noopener noreferrer">
+            <h3>Support the Program</h3>
+            <p>Help strengthen Bellaire Baseball through donations and community support.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <footer id="contact" class="site-footer">
     <div class="container footer-grid">
       <div>
         <h4>Cardinal Baseball Booster Club</h4>
-        <p>Official site for Bellaire Baseball team information, schedules, venues, and community support.</p>
+        <p>
+          Official site for Bellaire Baseball team information, schedules, venues, photos, and community support.
+        </p>
       </div>
 
       <div>
         <h4>Follow</h4>
-        <a href="https://www.facebook.com/BellaireCardinalBaseball" target="_blank">Facebook</a>
-        <a href="https://www.instagram.com/bellairecardinalbaseball/" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/BellaireCardinalBaseball" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.instagram.com/bellairecardinalbaseball/" target="_blank" rel="noopener noreferrer">Instagram</a>
       </div>
 
       <div>
         <h4>Quick Links</h4>
+        <a href="#teams">Teams</a>
+        <a href="#rosters">Rosters</a>
         <a href="#schedule">Schedules</a>
-        <a href="#teams">Teams & Rosters</a>
         <a href="#venues">Venue Directions</a>
+        <a href="#photos">Photos</a>
+        <a href="https://www.paypal.com/donate/?hosted_button_id=57MP36ZK4H9AJ&source=qr" target="_blank" rel="noopener noreferrer">Donate</a>
       </div>
     </div>
   </footer>
