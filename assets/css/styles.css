@@ -96,11 +96,14 @@ a {
 }
 .logo {
   height: 46px;
-  transition: transform 0.2s ease;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.25s ease, filter 0.25s ease;
 }
 
 .logo:hover {
-  transform: scale(1.05);
+  transform: scale(1.25);
+  filter: brightness(1.1);
 }
 .hero {
   position: relative;
